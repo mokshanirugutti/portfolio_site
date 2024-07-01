@@ -29,7 +29,7 @@ const AboutSection = () => {
         hidden: { opacity: 0 },
       }}
       transition={{ duration: 2 }}
-      className='border rounded-md'
+      className='border rounded-md w-fit shadow-lg'
       >
         <Image src="/logo.png" alt="logo_image" width={500} height={500}/>
       </motion.div>
@@ -64,9 +64,6 @@ const AboutSection = () => {
         >
           <SkillsGrid/>
         </motion.div>
-        
-      
-      
       
       </div>
     </div>

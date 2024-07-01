@@ -32,7 +32,7 @@ const EmailSection: React.FC = () => {
   };
 
   return (
-    <section className="grid grid-cols-2 bg-gray-800 h-screen  place-content-center p-10">
+    <section className="grid grid-cols-2 bg-gray-800 h-screen place-items-center">
       <div className="text-[#ADB7BE] max-w-md">
         <p className="mb-4">
           I'm currently looking for new opportunities, my inbox is always open.

@@ -19,7 +19,8 @@ const DotsAnimation = (canvasRef: React.RefObject<HTMLCanvasElement>, bannerRef:
     if (!ctx) return;
 
     const dots: Dot[] = [];
-    const arrayColors = ["#eee", "#545454", "#596d91", "#bb5a68", "#696541"];
+    const arrayColors = [ "#a0c4ff", "#bdb2ff", "#ffc6ff", "#ffca3a", "#ff595e"];
+
 
     const createDots = () => {
       for (let index = 0; index < 50; index++) {
