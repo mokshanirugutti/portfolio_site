@@ -2,32 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  pointer-events: none;
+  border : 2px solid black;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.main_heading{
+  @apply text-xs md:text-6xl lg:text-8xl md:font-bold text-center w-fit h-fit pb-10;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.arrow-shape {
+  position: fixed;
+  height: 100vh;
+  top: 0px;
+  right: 0px;
+  
+  border-left: 2.5px solid transparent;
+  border-right: 2.5px solid transparent;
+  border-top: 10px solid #ede8e4;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.neon-effect {
+  color: #fff;
+  text-shadow:
+    0 0 5px #0fa,
+    0 0 10px #0fa,
+    0 0 20px #0fa,
+    0 0 30px #0fa,
+    0 0 40px #0fa,
+    0 0 50px #0fa,
+    0 0 60px #0fa,
+    0 0 70px #0fa;
 }
