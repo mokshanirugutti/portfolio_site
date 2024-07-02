@@ -14,21 +14,21 @@ const projects = [
     title: 'Dictionary App',
     description: 'User can search for a word. Each word will be stored in history for each user',
     repoLink: 'https://github.com/mokshanirugutti/dictionary_book',
-    liveLink: '#',
+    liveLink: 'https://dictionary-book-store.netlify.app/',
     image : 'dictionaryapp.png'
   },
   {
     title: 'Car Showcase',
     description: 'A rental website for searching cars.',
     repoLink: 'https://github.com/mokshanirugutti/car_rental',
-    liveLink: '#',
+    liveLink: 'https://carcom-rentals.vercel.app/',
     image : 'carcom.png',
   },
 ];
 
 const ProjectSection: React.FC = () => {
   return (
-    <div className="pt-10 mx-auto pr-20 h-screen items-center mt-10">
+    <div className="pt-10 mx-auto pr-20 h-auto lg:h-screen items-center mt-10">
       <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center ">
         {projects.map((project, index) => (

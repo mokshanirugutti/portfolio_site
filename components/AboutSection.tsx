@@ -20,7 +20,7 @@ const AboutSection = () => {
 
 
   return (
-    <div id="about-section" ref={ref} className='bg-gray-800 w-screen h-screen grid grid-cols-2 items-center p-10'>
+    <div id="about-section" ref={ref} className='bg-gray-800 w-full h-auto lg:h-screen grid grid-cols-1 md:grid-cols-2 items-center p-10'>
       <motion.div
       initial={{ opacity: 0 }}
       animate={controls}
@@ -29,11 +29,11 @@ const AboutSection = () => {
         hidden: { opacity: 0 },
       }}
       transition={{ duration: 2 }}
-      className='border rounded-md w-fit shadow-lg'
+      className='border rounded-md w-fit shadow-lg hidden md:block'
       >
         <Image src="/logo.png" alt="logo_image" width={500} height={500}/>
       </motion.div>
-      <div className='flex flex-col gap-10'>
+      <div className='flex flex-col gap-5 md:gap-10'>
       <div>
       <motion.div
         initial={{ opacity: 0 }}
@@ -43,9 +43,10 @@ const AboutSection = () => {
           hidden: { opacity: 0 },
         }}
         transition={{ duration: 2 }}
+        className='w-full'
       >
-        <h1 className='text-4xl font-bold text-white'>About Me</h1>
-        <p className='text-lg text-white mt-2'>
+        <h1 className='text-2xl md:text-4xl font-bold text-white '>About Me</h1>
+        <p className='text-sm md:text-lg text-white mt-2'>
         I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with JavaScript, React,  Node.js, Express, PostgreSQL,

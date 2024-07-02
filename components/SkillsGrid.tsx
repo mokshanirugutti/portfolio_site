@@ -22,8 +22,8 @@ const skills = [
 
 const SkillsGrid: React.FC = () => {
   return (
-    <div className="flex justify-center items-center bg-slate-200 rounded-lg overflow-hidden">
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 p-5">
+    <div className="flex justify-center items-center bg-slate-200 rounded-lg overflow-hidden w-full md:w-auto">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-5">
       {skills.map((skill, index) => (
         <motion.div
           key={index}

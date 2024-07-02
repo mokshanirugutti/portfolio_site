@@ -1,7 +1,7 @@
 export const textVariant = {
-  initial: { fontSize: '1.5rem' },
+  
   animate: {
-    fontSize:'3rem',
+    fontSize:'1.9rem',
     transition: {
       ease: "easeInOut",
       duration: 1,

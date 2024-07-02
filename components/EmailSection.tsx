@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React from "react";
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
@@ -32,12 +32,12 @@ const EmailSection: React.FC = () => {
   };
 
   return (
-    <section className="grid grid-cols-2 bg-gray-800 h-screen place-items-center">
+    <section className="grid gird-cols-1 md:grid-cols-2 bg-gray-800 h-screen place-items-center p-5">
       <div className="text-[#ADB7BE] max-w-md">
         <p className="mb-4">
           I'm currently looking for new opportunities, my inbox is always open.
-          Whether you have a question or just want to say hi, I'll try my best
-          to get back to you!
+          To know more about me and my work or if you want to collable, drop your message. I'll 
+          get back to you!
         </p>
         
         {/* GitHub Icon and Link */}
@@ -51,7 +51,7 @@ const EmailSection: React.FC = () => {
         {/* LinkedIn Icon and Link */}
         <div className="flex items-center mb-4">
           <FontAwesomeIcon icon={faLinkedin} size="2x" className="mr-2" />
-          <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500">
+          <a href="https://www.linkedin.com/in/moksha-nirugutti" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500">
             LinkedIn
           </a>
         </div>
@@ -59,7 +59,7 @@ const EmailSection: React.FC = () => {
         {/* LeetCode Icon and Link */}
         <div className="flex items-center mb-4">
           <FontAwesomeIcon icon={faCode} size="2x" className="mr-2" />
-          <a href="https://leetcode.com/your-profile" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500">
+          <a href="https://leetcode.com/u/mokshanirugutti/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500">
             LeetCode
           </a>
         </div>
