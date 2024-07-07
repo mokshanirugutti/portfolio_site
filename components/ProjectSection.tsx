@@ -1,5 +1,7 @@
+'use client'
 import React from 'react';
 import Project from './Project';
+import MotionWrapper from './MotionWrapper';
 
 const projects = [
   {
@@ -28,9 +30,16 @@ const projects = [
 
 const ProjectSection: React.FC = () => {
   return (
-    <div className="pt-10 mx-auto pr-20 h-auto lg:h-screen items-center mt-10">
-      <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center ">
+    <div className="pt-10 mx-auto  pr-20 h-auto lg:h-screen items-center pt-10 bg-mainbg">
+        <div className="flex items-center md:ml-40 md:mr-40  mb-6">
+    <div className="flex-grow h-1 bg-gray-500 ml-10"></div>
+    <MotionWrapper
+    className="text-3xl font-bold text-right pl-2"
+    >
+    <h2 >Projects.</h2>
+    </MotionWrapper>
+  </div>
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center ">
         {projects.map((project, index) => (
           <Project
             key={index}
