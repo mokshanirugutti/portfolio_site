@@ -4,6 +4,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import DrawOutlineButton from './ProjectCards/DrawOutlineButton'
 
 const EmailSection: React.FC = () => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -44,7 +45,7 @@ const EmailSection: React.FC = () => {
         <div className="flex items-center mb-4">
           <FontAwesomeIcon icon={faGithub} size="2x" className="mr-2" />
           <a href="https://github.com/mokshanirugutti" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500">
-            GitHub
+            <DrawOutlineButton>Github</DrawOutlineButton>
           </a>
         </div>
         
@@ -52,7 +53,7 @@ const EmailSection: React.FC = () => {
         <div className="flex items-center mb-4">
           <FontAwesomeIcon icon={faLinkedin} size="2x" className="mr-2" />
           <a href="https://www.linkedin.com/in/moksha-nirugutti" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500">
-            LinkedIn
+            <DrawOutlineButton>LinkedIn</DrawOutlineButton>
           </a>
         </div>
 
@@ -60,7 +61,7 @@ const EmailSection: React.FC = () => {
         <div className="flex items-center mb-4">
           <FontAwesomeIcon icon={faCode} size="2x" className="mr-2" />
           <a href="https://leetcode.com/u/mokshanirugutti/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500">
-            LeetCode
+            <DrawOutlineButton>Leetcode</DrawOutlineButton>
           </a>
         </div>
       </div>
