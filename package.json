@@ -22,6 +22,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.10.3",
+    "react-moving-text": "^0.0.7",
+    "react-text-transition": "^3.1.0",
     "react-type-animation": "^3.2.0",
     "sass": "^1.77.6"
   },

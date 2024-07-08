@@ -1,12 +1,17 @@
 'use client'
-import React, { useEffect, useState } from 'react'
-import { easeIn, motion, useAnimation } from 'framer-motion'
+import React, { useEffect } from 'react'
+import {  motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import SkillsGrid from './SkillsGrid'
 import Image from 'next/image'
 import MotionWrapper from './MotionWrapper'
+import SkillBox from './SkillBox'
+import SkillHeading from './About/SkillHeading'
 const AboutSection = () => {
   const controls = useAnimation();
+  const [skills, setSkills] = React.useState(false)
+  const showSkills=()=>{
+    setSkills(true);
+  }
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -52,15 +57,16 @@ const AboutSection = () => {
         className='w-full'
       >
          
-        <p className='text-sm md:text-lg text-white'>
+        <p className='text-sm md:text-lg text-white mb-3'>
         I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React,  Node.js, Express, PostgreSQL,
-             HTML, CSS, and Git
+            interactive and responsive web applications.
+            
         </p>
+        
+          <SkillHeading/>
       </motion.div>
       </div>
-        <motion.div
+        {/* <motion.div
         animate={controls}
         variants={{
           visible: { opacity: 1},
@@ -68,9 +74,10 @@ const AboutSection = () => {
         }}
         initial='hidden'
         transition={{ duration: 1, delay:1.5 }}
-        >
-          <SkillsGrid/>
-        </motion.div>
+        > */}
+          {/* <SkillsGrid/> */}
+          { <SkillBox/>}
+        
       
       </div>
     </div>
