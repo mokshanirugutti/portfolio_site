@@ -76,9 +76,14 @@ const EmailSection: React.FC = () => {
           <label htmlFor="message" className="block text-white mb-2">Message:</label>
           <textarea id="message" name="message" rows={4} placeholder="Keep you message here.." className="bg-gray-700 rounded-md px-3 py-2 w-full text-white" required></textarea>
         </div>
-        <motion.button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md"
+        <motion.button type="submit" 
+        className="px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}>
+          <svg className="w-3.5 h-3.5 text-white me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+        <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+        <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+        </svg>
           Send Message
         </motion.button>
       </motion.form>

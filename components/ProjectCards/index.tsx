@@ -15,35 +15,30 @@ interface CardProps {
 const Card = ({title, description, image, repoLink,liveLink, color, i}:CardProps) => {
 
   return (
+    
     <div className={styles.cardContainer}>
       <div 
         className={styles.card}
-        style={{backgroundColor: color, top:`calc(-5vh + ${i * 25}px)`}}
+        style={{backgroundColor: color, top:`calc(-1vh + ${i * 15}px)`}}
       >
-        <h2>{title}</h2>
-        <div className={styles.body}>
-          <div className={styles.description}>
-            <p>{description}</p>
-            
-            <div className='flex flex-col mt-4'>
-                <CustomButton link={repoLink} title='Repo Link'/>              
-                <CustomButton link={liveLink} title='Live Link'/>
+        <div className='text-center'>
+              <h2>{title}</h2>
+        </div>
+        <div className='grid grid-cols-1 md:grid-cols-2'>
+            <div >
+                <p className='mb-3 mt-3 mr-5 first-letter-lg'>{description}</p>
+                <div className='flex md:flex-col gap-3'>
+                    <CustomButton link={repoLink} title='Repo Link' />
+                    <CustomButton link={liveLink} title='Live Link' />
+                </div>
             </div>
-            
-          </div>
-
-          <div className={styles.imageContainer}>
-            <div className={styles.inner}>
-              <Image
-                fill
-                src={`/${image}`}
-                alt="image" 
-              />
+            <div className='hidden md:block'>
+              <Image src={`/${image}`} alt={title} width={300} height={700} />
             </div>
-          </div>
         </div>
       </div>
     </div>
+    
   )
 }
 

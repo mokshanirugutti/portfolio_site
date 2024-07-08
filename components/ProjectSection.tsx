@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: 'Car Showcase',
-    description: 'A rental website for searching cars.',
+    description: 'A rental website for searching cars. Cars are fetched from API. User can search cars by branch,variant, type(fuel)',
     repoLink: 'https://github.com/mokshanirugutti/car_rental',
     liveLink: 'https://carcom-rentals.vercel.app/',
     image: 'carcom.png',
@@ -42,7 +42,7 @@ const ProjectSection: React.FC = () => {
 
   return (
     <>
-      <div className="flex items-center md:ml-40 md:mr-40 pt-20">
+      <div className="flex items-center md:ml-40 md:mr-40 pt-20 sticky">
         <div className="flex-grow h-1 bg-gray-500 ml-10"></div>
         <MotionWrapper className="text-3xl font-bold text-right pl-2">
           <h2>Projects.</h2>
@@ -64,16 +64,5 @@ const ProjectSection: React.FC = () => {
   );
 };
 
-const Section1 = () =>{
-  return(
-    <h1 className='h-screen sticky top-0'>
-      testing scroll 1
-    </h1>)
-}
-const Section2 = () =>{
-  return(
-    <h1 className='h-screen'>
-      testing scroll 2
-    </h1>)
-}
+
 export default ProjectSection;
