@@ -4,7 +4,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
 import { faCode } from "@fortawesome/free-solid-svg-icons";
-import DrawOutlineButton from './ProjectCards/DrawOutlineButton'
+import DrawOutlineButton from './Buttons/DrawOutlineButton'
 
 const EmailSection: React.FC = () => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {

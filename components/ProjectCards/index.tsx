@@ -1,8 +1,7 @@
 'use client'
 import Image from 'next/image';
 import styles from './style.module.scss';
-import CustomButton from './CustomButton';
-import DrawOutlineButton from './DrawOutlineButton'
+import CustomButton from '../Buttons/CustomButton'; 
 interface CardProps {
     title: string;
     description: string;
@@ -24,11 +23,11 @@ const Card = ({title, description, image, repoLink,liveLink, color, i}:CardProps
       >
         <div>
         <a href="#" className="flex flex-col items-center  border-gray-200 md:flex-row md:max-w-xl dark:border-gray-700">
-          <Image src={`/${image}`} alt={title} width={200} height={100} className='h-full w-full mt-10 rounded shadow-sm' />
-        <div className="flex flex-col justify-between p-4 leading-normal mt-10">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
-        <p className="mb-3 font-normal">{description}</p>
-        <div className='flex gap-5'>
+          <Image src={`/${image}`} alt={title} width={200} height={100} className='h-full w-full md:mt-10 rounded shadow-sm' />
+        <div className="flex flex-col justify-between p-2 md:p-4 leading-normal md:mt-10">
+        <h5 className="mb-2 md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title} </h5>
+        <p className="md:mb-3 w-[100%] font-normal">{description}</p>
+        <div className='flex gap-1 md:gap-5 md:w-72'>
           <CustomButton link={repoLink} title='Repo Link' />
           <CustomButton link={liveLink} title='Live Link' />
           {/* <DrawOutlineButton>Repo Link </DrawOutlineButton> */}
