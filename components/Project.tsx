@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-
+import CustomButton from './ProjectCards/CustomButton';
 interface ProjectProps {
   title: string;
   description: string;
