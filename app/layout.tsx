@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
+import { Archivo } from "next/font/google";
 import "./globals.css";
 
-const rubik = Rubik({ subsets: ["latin"] });
+const archivo = Archivo({ 
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+ });
 
 export const metadata: Metadata = {
-  title: "Moksha-Nirugutti Portfolio",
+  title: "Hey, I'm Moksha",
   description: "Portfolio website",
 };
 
@@ -16,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={rubik.className}>{children}</body>
+      <body className={archivo.className}>{children}</body>
     </html>
   );
 }

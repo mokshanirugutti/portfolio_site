@@ -7,6 +7,11 @@ const nextConfig = {
               hostname: 'skillicons.dev',
               pathname: '/icons',
           },
+          {
+            protocol: 'https',
+            hostname: 'assets.aceternity.com',
+            pathname: '/**',
+          }
       ],
   },
 };

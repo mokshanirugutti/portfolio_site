@@ -1,5 +1,5 @@
 'use client'
-import { AboutSection, DotFollower, EmailSection, HeroSection,ProjectSection } from "@/components";
+import   HeroSection  from "@/components/HeroSection/HeroSection";
 import Lenis from "lenis"
 import { useEffect } from "react"
 export default function Home() {
@@ -14,11 +14,8 @@ export default function Home() {
   return (
     <>
     <HeroSection />
-    <AboutSection/>
-    <div className="relative h-[300vh]">
-     <ProjectSection/>
-    </div>
-    <EmailSection/>
+    
+    
   </>
   );
 }

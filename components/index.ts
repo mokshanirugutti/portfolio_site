@@ -1,4 +1,4 @@
-import HeroSection from "./HeroSection";
+import HeroSection from "./HeroSection/HeroSection";
 import DotFollower from "./DotFollower";
 import AboutSection from "./AboutSection";
 import SpineLaptop from "./SpineLaptop";
